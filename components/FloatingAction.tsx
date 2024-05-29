@@ -21,14 +21,14 @@ const FloatingAction = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        className="xl:bottom-5 xl:right-5 z-60 "
+        className="bottom-3 xl:right-5 z-60 "
         sx={{
           position: "fixed",
           bottom: 100,
           right: 16,
           "& > :not(style)": { m: 1 },
           [theme.breakpoints.up("xl")]: {
-            bottom: 240,
+            bottom: 200,
             right: 24,
           },
         }}>

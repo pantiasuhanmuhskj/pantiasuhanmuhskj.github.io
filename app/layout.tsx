@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import FloatingAction from "@/components/FloatingAction";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Header />
         <main className="relative overflow-auto">{children}</main>
         <Footer />
+        <FloatingAction />
       </body>
     </html>
   );
