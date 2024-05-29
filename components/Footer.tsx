@@ -25,7 +25,7 @@ const Footer = () => {
               <Image
                 src="nav-logo.svg"
                 alt="Logo Panti Asuhan"
-                width={350}
+                width={325}
                 height={20}
               />
             </div>

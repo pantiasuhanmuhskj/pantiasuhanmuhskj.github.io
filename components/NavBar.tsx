@@ -71,7 +71,7 @@ const NavBar = ({
         </div>
         <div className="flex items-center gap-4">
           {/* Button */}
-          <div className="flex">
+          <div className="hidden xs:flex gap-2">
             <Link href="https://wa.me/+6287736060452">
               <Button
                 type="button"
