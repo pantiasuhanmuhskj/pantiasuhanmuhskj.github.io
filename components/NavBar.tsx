@@ -43,13 +43,18 @@ const NavBar = ({
         {/* Link Pages */}
         <div className={`${containerStyle}`}>
           <ul
-            className={`flex flex-col lg:flex-row gap-x-10 gap-y-5 lg:gap-y-0 py-10 lg:py-0 absolute lg:static left-0 w-full items-start px-5 bg-white z-30 duration-300 ${
-              isOpen ? "top-[7.5%]" : "top-[-100%]"
+            className={`flex flex-col lg:flex-row gap-x-10 gap-y-5 lg:gap-y-0 py-10 lg:py-0 absolute lg:static left-0 w-full items-start px-5 bg-white z-30 ${
+              isOpen ? "top-[7.5%] duration-300" : "top-[-100%] duration-1000"
             }`}>
             {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}
                 key={link.key}
+                onClick={() => {
+                  setTimeout(() => {
+                    toggleMenu();
+                  }, 300); // Close the menu after 300 milliseconds
+                }}
                 className={`left-2 lg:left-0 regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold ${LinkStyles}`}>
                 {link.href === href && (
                   <motion.span
