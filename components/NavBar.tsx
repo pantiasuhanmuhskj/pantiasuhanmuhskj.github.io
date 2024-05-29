@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 type NavBarProps = {
   containerStyle: string;
@@ -28,6 +29,8 @@ const NavBar = ({
   };
   const href = usePathname();
 
+  const isMobile = useMediaQuery({ query: "(max-width: 399px)" });
+
   return (
     <nav className="py-3 shadow-sm bg-white">
       <div className="flex items-center justify-between max-container padding-container z-30">
@@ -36,8 +39,8 @@ const NavBar = ({
           <Image
             src="logo-nav.png"
             alt="Logo Panti Asuhan"
-            width={300}
-            height={50}
+            width={isMobile ? 200 : 300}
+            height={isMobile ? 30 : 50}
           />
         </Link>
         {/* Link Pages */}
