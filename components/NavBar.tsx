@@ -34,10 +34,10 @@ const NavBar = ({
         {/* Logo */}
         <Link href="/">
           <Image
-            src="hilink-logo.svg"
+            src="logo-nav.png"
             alt="Logo Panti Asuhan"
-            width={75}
-            height={30}
+            width={300}
+            height={50}
           />
         </Link>
         {/* Link Pages */}
