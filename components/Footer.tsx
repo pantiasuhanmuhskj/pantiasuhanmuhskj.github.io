@@ -19,13 +19,13 @@ const Footer = () => {
               <Image
                 src="/logo-panti.png"
                 alt="Logo Panti Asuhan"
-                width={70}
+                width={60}
                 height={30}
               />
               <Image
                 src="nav-logo.svg"
                 alt="Logo Panti Asuhan"
-                width={325}
+                width={250}
                 height={20}
               />
             </div>
