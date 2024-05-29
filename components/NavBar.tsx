@@ -69,7 +69,7 @@ const NavBar = ({
             ))}
           </ul>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-0 sm:gap-4">
           {/* Button */}
           <div className="hidden xs:flex gap-2">
             <Link href="https://wa.me/+6287736060452">
