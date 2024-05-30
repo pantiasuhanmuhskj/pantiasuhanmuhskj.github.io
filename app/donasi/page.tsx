@@ -15,7 +15,7 @@ const sections: {
     id: "transfer bank",
     title: "Transfer Bank",
     description:
-      "Untuk Donasi, kami menyediakan beberapa pilihan bank yaitu sebagai beriku:",
+      "Untuk Donasi, kami menyediakan beberapa pilihan bank yaitu sebagai berikut:",
     content: <CardGrid cardData={cardData} />,
   },
   {

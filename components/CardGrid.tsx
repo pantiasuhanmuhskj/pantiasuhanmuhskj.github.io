@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({
       src={imageSrc}
       alt={title}
       width={400}
-      height={200}
+      height={100}
       className="w-full px-5 object-cover"
     />
     <div className="p-4">
