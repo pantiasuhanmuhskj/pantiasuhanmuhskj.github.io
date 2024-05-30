@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
       alt={title}
       width={400}
       height={100}
-      className="w-full px-5 object-cover"
+      className="w-full px-5 h-full"
     />
     <div className="p-4">
       <h3 className="text-lg font-semibold mb-2">{title}</h3>

@@ -24,7 +24,7 @@ export const cardData: Card[] = [
   },
   {
     imageSrc: "/logo-bank-bsi.svg",
-    title: "(451) 7265785397",
+    title: "(451)-7265785397",
     reknumber: "7265785397",
     description: "a/n Panti Asuhan Muhammadiyah Sokaraja",
   },
