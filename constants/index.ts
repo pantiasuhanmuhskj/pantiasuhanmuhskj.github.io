@@ -10,8 +10,8 @@ export const NAV_LINKS = [
 interface Card {
   imageSrc: string;
   title: string;
+  reknumber: string;
   description: string;
-  buttonText: string;
   onClick?: () => void;
 }
 
@@ -19,13 +19,13 @@ export const cardData: Card[] = [
   {
     imageSrc: "/bank-bri-logo.svg",
     title: "No Rek: 310801011553530",
+    reknumber: "310801011553530",
     description: "a/n Panti Asuhan Muhammadiyah Sokaraja",
-    buttonText: "Salin Nomor Rekening",
   },
   {
     imageSrc: "/bank-syariah-indonesia.svg",
     title: "No Rek: (451) 7265785397",
+    reknumber: "7265785397",
     description: "a/n Panti Asuhan Muhammadiyah Sokaraja",
-    buttonText: "Salin Nomor Rekening",
   },
 ];

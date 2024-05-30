@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
+import CopyButton from "./CopyButton";
 
 interface CardProps {
   imageSrc: string;
   title: string;
   description: string;
-  buttonText: string;
+  reknumber: string;
   onClick?: () => void; // Optional onClick handler for the button
 }
 
@@ -13,7 +14,7 @@ const Card: React.FC<CardProps> = ({
   imageSrc,
   title,
   description,
-  buttonText,
+  reknumber,
   onClick,
 }) => (
   <div className="border rounded-lg overflow-hidden shadow-sm flex flex-col px-5 py-1 text-center items-center justify-center">
@@ -27,11 +28,7 @@ const Card: React.FC<CardProps> = ({
     <div className="p-4">
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
-      <button
-        onClick={onClick}
-        className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        {buttonText}
-      </button>
+      <CopyButton textToCopy={reknumber} />
     </div>
   </div>
 );

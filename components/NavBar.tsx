@@ -32,11 +32,12 @@ const NavBar = ({
   const isMobile = useMediaQuery({ query: "(max-width: 399px)" });
 
   return (
-    <nav className="py-3 shadow-sm bg-white">
-      <div className="flex items-center justify-between max-container padding-container z-30">
+    <nav className="py-3 shadow-sm bg-white z-30">
+      <div className="flex items-center justify-between max-container padding-container">
         {/* Logo */}
         <Link href="/">
           <Image
+            className="z-50"
             src="logo-nav.png"
             alt="Logo Panti Asuhan"
             width={isMobile ? 200 : 300}
@@ -46,8 +47,10 @@ const NavBar = ({
         {/* Link Pages */}
         <div className={`${containerStyle}`}>
           <ul
-            className={`flex flex-col lg:flex-row gap-x-10 gap-y-5 lg:gap-y-0 py-10 lg:py-0 absolute lg:static left-0 w-full items-start px-5 bg-white z-30 ${
-              isOpen ? "top-[7.5%] duration-300" : "top-[-100%] duration-1000"
+            className={`flex flex-col lg:flex-row gap-x-10 gap-y-5 lg:gap-y-0 py-10 lg:py-0 absolute lg:static left-0 w-full items-start px-5 bg-white ${
+              isOpen
+                ? "top-[9%] duration-300 z-20"
+                : "top-[-100%] duration-1000"
             }`}>
             {NAV_LINKS.map((link) => (
               <Link

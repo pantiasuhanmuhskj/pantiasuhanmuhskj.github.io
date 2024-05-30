@@ -1,23 +1,36 @@
 "use client";
 import CardGrid from "@/components/CardGrid";
+import DonasiLangsung from "@/components/DonasiLangsung";
+import HubungiKami from "@/components/HubungiKami";
 import { cardData } from "@/constants";
 import React, { useState } from "react";
 
-const sections: { id: string; title: string; content: React.ReactNode }[] = [
+const sections: {
+  id: string;
+  title: string;
+  description?: React.ReactNode;
+  content: React.ReactNode;
+}[] = [
   {
     id: "transfer bank",
     title: "Transfer Bank",
+    description:
+      "Untuk Donasi, kami menyediakan beberapa pilihan bank yaitu sebagai beriku:",
     content: <CardGrid cardData={cardData} />,
   },
   {
     id: "donasi langsung",
     title: "Donasi Langsung",
-    content: "This is the map section.",
+    description:
+      "Selain rekening bank kita juga menerima donasi langsung, silahkan datang langsung ke lokasi kami:",
+    content: <DonasiLangsung />,
   },
   {
     id: "hubungi kami",
     title: "Hubungi Kami",
-    content: "This is the transfer section.",
+    description:
+      "Jika ada hal yang mau ditanyakan, silahkan hubungi nomor-nomor dibawah ini:",
+    content: <HubungiKami />,
   },
 ];
 
@@ -56,8 +69,7 @@ export default function Page() {
           {activeSection && (
             <div id={activeSection}>
               <p className="my-5 lg:my-0 lg:mb-5">
-                Untuk Donasi, kami menyediakan beberapa pilihan bank yaitu
-                sebagai beriku:{" "}
+                {sections.find((s) => s.id === activeSection)?.description}
               </p>
               {/* <h2>{sections.find((s) => s.id === activeSection)?.title}</h2> */}
               {sections.find((s) => s.id === activeSection)?.content}
