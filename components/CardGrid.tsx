@@ -17,14 +17,16 @@ const Card: React.FC<CardProps> = ({
   reknumber,
   onClick,
 }) => (
-  <div className="border rounded-lg overflow-hidden shadow-sm flex flex-col px-5 py-1 text-center items-center justify-center">
-    <Image
-      src={imageSrc}
-      alt={title}
-      width={400}
-      height={100}
-      className="w-full px-5 h-full"
-    />
+  <div className="border rounded-lg overflow-hidden shadow-sm flex flex-col px-1 sm:px-5 py-1 text-center items-center justify-center">
+    <div className="h-[100px]">
+      <Image
+        src={imageSrc}
+        alt={title}
+        width={400}
+        height={100}
+        className="w-full h-full"
+      />
+    </div>
     <div className="p-4">
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>

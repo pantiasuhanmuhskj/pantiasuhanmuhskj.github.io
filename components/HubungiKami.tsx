@@ -13,7 +13,9 @@ const HubungiKami = () => {
         <br />
         0895-3012-1461
       </p>
-      <p>
+      <p className="mt-3">
+        Konfirmasi Donasi & Informasi:
+        <br />
         <span className="underline">Bendahara: Bpk. Tarnyu</span>
         <br />
         0877-3606-0452
