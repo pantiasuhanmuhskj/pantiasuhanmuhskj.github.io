@@ -1,10 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import { GiReceiveMoney, GiMoneyStack } from "react-icons/gi";
 
 const ButuhDonasi = () => {
+  // const [donationCount, setDonationCount] = useState(0);
+
+  // useEffect(() => {
+  //   async function getDonationCount() {
+  //     const response = await fetch("/api/donation-count");
+  //     const data = await response.json();
+  //     setDonationCount(data.count);
+  //   }
+
+  //   getDonationCount();
+  // }, []);
+
   return (
     <div className="w-full bg-green-100 py-10 text-gray-900">
       <div className="flex flex-col items-center justify-center">
@@ -45,6 +58,7 @@ const ButuhDonasi = () => {
               <div className="flex items-end justify-center">
                 <GiMoneyStack size={40} className="mr-5" color="#00796B" />
                 <div className="flex font-semibold gap-1 text-lg">
+                  <p>Rp. </p>
                   <CountUp
                     end={100955000}
                     duration={10}
