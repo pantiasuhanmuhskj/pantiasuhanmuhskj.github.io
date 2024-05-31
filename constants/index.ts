@@ -18,8 +18,8 @@ interface Card {
 export const cardData: Card[] = [
   {
     imageSrc: "/logo-bank-bri.svg",
-    title: "310801011553530",
-    reknumber: "310801011553530",
+    title: "129401000431562",
+    reknumber: "129401000431562",
     description: "a/n Panti Asuhan Muhammadiyah Sokaraja",
   },
   {
