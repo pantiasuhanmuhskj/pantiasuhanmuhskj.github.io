@@ -33,7 +33,7 @@ const ButuhDonasi = () => {
                 <p className="text-xl font-semibold">Total Donasi Dibutuhkan</p>
               </div>
               <div className="flex items-end justify-center">
-                <GiReceiveMoney size={40} className="mr-5" color="#00796B" />
+                <GiMoneyStack size={40} className="mr-5" color="#00796B" />
                 <div className="flex font-semibold gap-1 text-lg">
                   <p>Rp. </p>
                   <CountUp
@@ -56,7 +56,7 @@ const ButuhDonasi = () => {
                 <p className="text-xl font-semibold">Total Donasi Terkumpul</p>
               </div>
               <div className="flex items-end justify-center">
-                <GiMoneyStack size={40} className="mr-5" color="#00796B" />
+                <GiReceiveMoney size={40} className="mr-5" color="#00796B" />
                 <div className="flex font-semibold gap-1 text-lg">
                   <p>Rp. </p>
                   <CountUp
